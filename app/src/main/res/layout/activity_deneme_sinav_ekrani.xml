@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Deneme_sinav_ekrani">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_sinav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#51BFF1"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/MyDarkToolbarStyle">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toolbar Title"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/toolbar_sinavtarihleri" />
+
+</androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_sinav">
+
+        <LinearLayout
+            android:id="@+id/lineer_soru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_ustsorusayisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/text_sorusayisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linear_soruenust"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_soru"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:background="@android:drawable/alert_light_frame"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/fotograf_soru"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:srcCompat="@android:drawable/alert_dark_frame" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_cevaplar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <RadioGroup
+                    android:id="@+id/radiogrup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/radioButtona"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/testt"
+                        android:button="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_a"
+                        android:gravity="left|center_vertical"
+                        android:padding="15dp"
+                        android:text="A"
+                        android:textAllCaps="false" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/testt"
+                        android:button="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_b"
+                        android:gravity="left|center_vertical"
+                        android:padding="15dp"
+                        android:text="B"
+                        android:textAllCaps="false" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/testt"
+                        android:button="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_c"
+                        android:gravity="left|center_vertical"
+                        android:padding="15dp"
+                        android:text="C"
+                        android:textAllCaps="false" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtond"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/testt"
+                        android:button="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_d"
+                        android:gravity="left|center_vertical"
+                        android:padding="15dp"
+                        android:text="D"
+                        android:textAllCaps="false" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/testt"
+                        android:button="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_d"
+                        android:gravity="left|center_vertical"
+                        android:padding="15dp"
+                        android:text="E"
+                        android:textAllCaps="false" />
+
+                    <RadioButton
+                        android:id="@+id/bos"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/testt"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="Boş Bırak" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:padding="25dp">
+
+                <Button
+                    android:id="@+id/button_geri"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/buttonsoru"
+                    android:text="Geri"
+                    android:textColor="@color/purple_700"
+                    app:backgroundTint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button9"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear_cevaplar" />
+
+                <Button
+                    android:id="@+id/button_ileri"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/buttonsoru"
+                    android:enabled="true"
+                    android:text="İleri"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/button8"
+
+                    app:layout_constraintTop_toBottomOf="@+id/linear_cevaplar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_soruCozumCikis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonsoru"
+                    android:text="Sonuçları göster"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

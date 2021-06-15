@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Sorucozum_ekrani">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/lineer_soru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_sorucozum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/kullanilacak"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" >
+ <TextView
+            android:id="@+id/toolbar_sorucozumtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Toolbar Title"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+            <TextView
+                android:id="@+id/text_soru"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+
+                android:background="@android:drawable/alert_light_frame"
+                android:padding="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/fotograf_soru"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:srcCompat="@android:drawable/alert_dark_frame" />
+
+            <LinearLayout
+                android:id="@+id/linear_cevaplar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <RadioGroup
+                    android:id="@+id/radiogrupsorucozum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/radioButtona2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RadioButton"
+                        android:background="@drawable/testt"
+                        android:padding="15dp"
+                        android:textAllCaps="false"
+                        android:button="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_a"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RadioButton"
+                        android:background="@drawable/testt"
+                        android:padding="15dp"
+                        android:textAllCaps="false"
+                        android:button="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_a"
+                        android:layout_marginTop="7dp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButtonc2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RadioButton"
+                        android:background="@drawable/testt"
+                        android:padding="15dp"
+                        android:textAllCaps="false"
+                        android:button="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_a"
+                        android:layout_marginTop="7dp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButtond2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RadioButton"
+                        android:background="@drawable/testt"
+                        android:padding="15dp"
+                        android:textAllCaps="false"
+                        android:button="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_a"
+                        android:layout_marginTop="7dp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButtone2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RadioButton"
+                        android:background="@drawable/testt"
+                        android:padding="15dp"
+                        android:textAllCaps="false"
+                        android:button="@android:color/transparent"
+                        android:drawableLeft="@drawable/ic_a"
+                        android:layout_marginTop="7dp"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:padding="25dp">
+
+                <Button
+                    android:id="@+id/button_geri"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/buttonsoru"
+                    android:enabled="true"
+                    android:text="Geri"
+                    android:textColor="@color/purple_700"
+                    app:backgroundTint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/button9"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear_cevaplar" />
+
+                <Button
+                    android:id="@+id/button_ileri"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:alpha="0.7"
+                    android:background="@drawable/buttonsoru"
+                    android:enabled="true"
+                    android:text="İleri"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/button8"
+
+                    app:layout_constraintTop_toBottomOf="@+id/linear_cevaplar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_soruCozumCikis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonsoru"
+                    android:text="Çıkış"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

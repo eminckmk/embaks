@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Konular12">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_konular11"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#60C4F1"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:titleTextColor="@color/white"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/toolbar_sinavtarihleri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Toolbar Title"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <Button
+                android:id="@+id/button_21"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:text="Milli Eğitim Temel Kanunu (1739)"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar_konular11" />
+
+            <Button
+                android:id="@+id/button_22"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/white"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:text="1 Sayılı Cumhurbaşkanlığı Kararnmesi"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_657S10" />
+
+            <Button
+                android:id="@+id/button_23"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/white"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:text="Özel Öğretim Kurumları Kanunu (5580)"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_2" />
+
+            <Button
+                android:id="@+id/button_24"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/white"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:text="Dilekce Hakkinin Kullanılmasina Dair Kanun (3071)"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_657S8" />
+
+            <Button
+                android:id="@+id/button_25"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:drawablePadding="15dp"
+                android:layout_marginTop="2dp"
+                android:gravity="left|center_vertical"
+                android:text="Bilgi Edinme Hakki Kanunu(4982)"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_657S7" />
+
+            <Button
+                android:id="@+id/button_26"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/white"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:text="İlkogretim ve Egitim Kanunu(222)"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_657S9" />
+
+            <Button
+                android:id="@+id/button_27"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/white"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:text="Milli Egitim Bakanligi Rehberlik Hizmetleri Yonetmeligi"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_657S3" />
+
+            <Button
+                android:id="@+id/button_28"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/white"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:text="Milli Egitim Bakanligi Okul Oncesi Egitim ve Ogretim Kurumlari Yonetmeligi "
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="10.5sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_657S5" />
+
+            <Button
+                android:id="@+id/button_29"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/white"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:text="Milli Egitim Bakanligi Ortaogretim Kurumları Yonetmeligi"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_657S4" />
+
+            <Button
+                android:id="@+id/button_210"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/white"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:text="Milli Egitim Bakanligi Egitim Kurumlari Sosyal Etkinlikler Yönetmeligi"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_657S2" />
+
+            <Button
+                android:id="@+id/button_211"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="@color/white"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:text="Milli Egitim Bakanligi Orgun ve Yaygin Egitimi Destekleme ve\n Yerlestirme Kurslari Yonergesi"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:useDefaultMargins="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
