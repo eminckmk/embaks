@@ -1,0 +1,8 @@
+# embaks![1-anasayfa](https://user-images.githubusercontent.com/64773776/158655279-e03a71a7-df40-4249-bc0a-3c6c1e3c1e39.jpg)
+![2-konu_başlıklar](https://user-images.githubusercontent.com/64773776/158655290-d829f9e7-fc11-4c7a-b473-f9c8f251077a.jpg)
+![3-konu_anlatım](https://user-images.githubusercontent.com/64773776/158655293-5d80ccea-eace-47ca-bced-f0c3621e4fb6.jpg)
+![4-geçmiş_sınavlar](https://user-images.githubusercontent.com/64773776/158655296-a66afded-0e12-4689-92c9-72dd477a4358.jpg)
+![5-sınav_içeriği](https://user-images.githubusercontent.com/64773776/158655299-24523f10-5081-4902-9a2f-52cb0b6d6251.jpg)
+![6-deneme_sınav_ekranı](https://user-images.githubusercontent.com/64773776/158655300-300daeab-2b67-47f1-b1d3-ca63b9b2ca3c.jpg)
+![7-soru_cözüm_ekranı](https://user-images.githubusercontent.com/64773776/158655303-ab28323c-cafe-4646-ac6f-4e523c6bc9b9.jpg)
+![8-sonuç_ekranı](https://user-images.githubusercontent.com/64773776/158655310-05479f5a-6862-4cdb-9ed4-2f079964eb9c.jpg)
